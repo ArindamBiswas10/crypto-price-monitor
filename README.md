@@ -376,44 +376,49 @@ Response includes:
 ## Screenshots
 
 ### Authentication
-![Login Page](screenshots/login.png)
+![Login Page](<img width="2559" height="1390" alt="image" src="https://github.com/user-attachments/assets/f8f47e7f-54d1-4fe5-b246-e653cfc29b2a" />
+)
 *User login interface with clean, modern design*
 
-![Registration](screenshots/register.png)
+![Registration](<img width="2559" height="1388" alt="image" src="https://github.com/user-attachments/assets/28ba87ee-d182-4b66-95c8-bdbdad68df4d" />
+)
 *Account creation form with validation*
 
-![Email Verification](screenshots/email-verification.png)
-*Email verification page and process*
-
 ### Dashboard
-![Dashboard Overview](screenshots/dashboard.png)
+![Dashboard Overview](<img width="2559" height="1385" alt="image" src="https://github.com/user-attachments/assets/35a9bb1c-0915-4935-81c0-87421c8c3de5" />
+)
 *Main dashboard with real-time cryptocurrency prices and statistics*
 
-![Price Cards](screenshots/price-cards.png)
+![Price Cards](<img width="1724" height="1027" alt="image" src="https://github.com/user-attachments/assets/98b01946-1635-4375-b967-ed61f0ec5648" />
+)
 *Interactive cryptocurrency price cards with live updates*
 
-![Connection Status](screenshots/connection-status.png)
-*Real-time WebSocket connection indicator*
 
 ### Alerts Management
-![Alerts Page](screenshots/alerts.png)
+![Alerts Page](<img width="2556" height="1381" alt="image" src="https://github.com/user-attachments/assets/849ad548-77f1-4c25-afed-f2e79d1d645e" />
+)
 *Price alerts management interface*
 
-![Create Alert Modal](screenshots/create-alert.png)
+![Create Alert Modal](<img width="2557" height="1382" alt="image" src="https://github.com/user-attachments/assets/850491a4-ba43-4225-9a89-dceb938ba846" />
+)
 *Alert creation modal with various condition options*
 
-![Alert Notifications](screenshots/alert-notification.png)
+![Alert Notifications](<img width="504" height="76" alt="image" src="https://github.com/user-attachments/assets/be6c3c86-0fea-4d03-8904-8138d9075e9b" />
+)
 *Real-time alert notifications in browser*
 
 ### User Profile
-![Profile Settings](screenshots/profile.png)
+![Profile Settings](<img width="2557" height="1387" alt="image" src="https://github.com/user-attachments/assets/47c2c669-ba76-4904-a49b-caeb81b6082d" />
+)
 *User profile and settings page*
 
 ### Email Notifications
-![Verification Email](screenshots/verification-email.png)
+![Verification Email](<img width="2089" height="714" alt="image" src="https://github.com/user-attachments/assets/d23b3d59-e752-4c36-9734-72b229d9d02b" />
+)
 *Email verification message template*
 
-![Alert Email](screenshots/alert-email.png)
+![Alert Email](<img width="2096" height="804" alt="image" src="https://github.com/user-attachments/assets/1376f395-a2dd-43d0-adfc-78996d0d6b1d" />
+)
 *Price alert notification email template*
 
 
