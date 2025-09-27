@@ -65,7 +65,7 @@ A real-time cryptocurrency price monitoring application with user authentication
 - **Node.js** 18+ 
 - **MongoDB** (local or cloud instance)
 - **Redis** (local or cloud instance)
-- **Gmail account** (for email functionality)
+- **SendGrid account** (for email functionality)
 
 ## Installation & Setup
 
@@ -106,14 +106,14 @@ JWT_SECRET=your-super-secret-jwt-key-change-in-production-make-it-very-long-and-
 JWT_EXPIRES_IN=30d
 JWT_COOKIE_EXPIRE=30
 
-# Email Configuration (Gmail)
-EMAIL_HOST=smtp.gmail.com
+# Email Configuration (SendGrid)
+EMAIL_HOST=smtp.sendgrid.net
 EMAIL_PORT=587
 EMAIL_SECURE=false
-EMAIL_USERNAME=your-email@gmail.com
-EMAIL_PASSWORD=your-gmail-app-password
+EMAIL_USERNAME=apikey
+EMAIL_PASSWORD=your-sendgrid-api-key
 EMAIL_FROM_NAME=Crypto Monitor
-EMAIL_FROM=your-email@gmail.com
+EMAIL_FROM=your-verified-sender@yourdomain.com
 
 # Update Intervals
 PRICE_UPDATE_INTERVAL=10000
@@ -148,14 +148,18 @@ REACT_APP_WS_URL=http://localhost:3001
 - Install Redis locally or use a cloud service
 - Ensure Redis is running on the configured port
 
-### 5. Email Configuration (Gmail)
+### 5. Email Configuration (SendGrid)
 
-1. Enable 2-Factor Authentication on your Google account
-2. Generate an App Password:
-   - Go to Google Account settings
-   - Security → 2-Step Verification → App passwords
-   - Select "Mail" and generate a password
-   - Use this password as `EMAIL_PASSWORD` in your `.env` file
+1. Create a SendGrid account at https://sendgrid.com
+2. Verify your sender identity (email address or domain)
+3. Create an API key:
+   - Go to Settings → API Keys
+   - Click "Create API Key"
+   - Choose "Restricted Access" and enable "Mail Send" permissions
+   - Copy the generated API key
+4. Use the API key as `EMAIL_PASSWORD` in your `.env` file
+5. Set `EMAIL_USERNAME` to `apikey` (literal string)
+6. Use your verified sender email as `EMAIL_FROM`
 
 ### 6. Start the Application
 
@@ -264,8 +268,9 @@ npm start
 **Email Verification Not Working**
 ```bash
 # Check backend logs for email errors
-# Verify Gmail app password is correct
+# Verify SendGrid API key is correct
 # Check spam folder for verification emails
+# Ensure sender email is verified in SendGrid
 ```
 
 **Database Connection Issues**
@@ -410,6 +415,7 @@ Response includes:
 
 ![Alert Email](screenshots/alert-email.png)
 *Price alert notification email template*
+
 
 
 ## Contributing
