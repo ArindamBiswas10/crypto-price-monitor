@@ -1,6 +1,6 @@
 # Crypto Price Monitor
 
-A real-time cryptocurrency price monitoring application with user authentication, customizable price alerts, and live real time updates via WebSocket connections. Deployed soon and running.
+A real-time cryptocurrency price monitoring application with user authentication, customizable price alerts, and live real time updates via WebSocket connections. Using CoinGecko API.
 
 ## Features
 
